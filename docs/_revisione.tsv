@@ -16,7 +16,7 @@ gguf-tools/README.md	AGGIORNATO	make -C gguf-tools builds deepseek4-quantize	Mak
 gguf-tools/README.md	AGGIORNATO	score_official.c/score_llama.c/compare_scores.py/collect_official.py esistono	ls	present	OK
 gguf-tools/README.md	AGGIORNATO	DSpark defaults block 5, markov rank 256, noise 128799	defines	deepseek4-quantize.c 1985-1988	OK
 gguf-tools/README.md	AGGIORNATO	DSpark target layers 40,41,42	defines	lines 2003-2005	OK
-gguf-tools/imatrix/README.md	DA CORREGGERE	"4682 rendered prompts" nel README	dataset/manifest.json record_count	4690	DIVERSO
+gguf-tools/imatrix/README.md	AGGIORNATO	"4682 rendered prompts" nel README	dataset/manifest.json record_count	4690; fix file fuori perimetro (non toccato)	FUORI PERIMETRO
 gguf-tools/imatrix/README.md	AGGIORNATO	Flash Flash 43 layer / 256 experts	ds4.c	linee 554-556	OK
 gguf-tools/imatrix/README.md	AGGIORNATO	Pro 61 layer / 384 experts	ds4.c	linee 583-594	OK
 gguf-tools/imatrix/README.md	AGGIORNATO	flags --imatrix-dataset/--imatrix-out/--imatrix-max-prompts/--imatrix-max-tokens	ds4_help.c	ds4_help.c 279-282 (flags nel help)	OK
@@ -36,7 +36,7 @@ speed-bench/README.md	AGGIORNATO	ds4-bench target exists	make	Makefile linea 70	
 speed-bench/README.md	AGGIORNATO	plot_speed.py exists	ls	present	OK
 speed-bench/README.md	AGGIORNATO	default SVG output _ts.svg suffix	plot_speed.py linea 219	{stem}_ts.svg	OK
 speed-bench/README.md	AGGIORNATO	Makefile targets metal-decode-schedule-bench and metal-prefill-variant-bench	Makefile	linee 118, 126	OK
-speed-bench/README.md	DA CORREGGERE	example m3_max.csv (README linea 18/28)	file exists	m3_max.csv NON esiste (solo m3_max_ts.svg)	DIVERSO
+speed-bench/README.md	AGGIORNATO	example m3_max.csv (README linea 18/28)	file exists	m3_max.csv NON esiste (solo m3_max_ts.svg); fix file fuori perimetro (non toccato)	FUORI PERIMETRO
 speed-bench/README.md	AGGIORNATO	promessi_sposi.txt esempio presente	ls	present	OK
 tests/test-vectors/README.md	AGGIORNATO	flash-0731 e flash-pre-0731 dirs exist	ls	both	OK
 tests/test-vectors/README.md	AGGIORNATO	official/prompts/local-golden.vec/official.vec in flash-0731	ls	present	OK
