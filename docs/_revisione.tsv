@@ -1,0 +1,48 @@
+file	classe	affermazione	atteso	trovato	esito
+README.md	AGGIORNATO	download_model.sh scarica da huggingface.co/antirez/deepseek-v4-gguf	costante REPO	linea 6: REPO="antirez/deepseek-v4-gguf"	OK
+README.md	AGGIORNATO	make target cuda-spark, cuda-generic, strix-halo, cpu esistono	4 target Makefile	Makefile: cpu linea 140, cuda-spark 167, cuda-generic 170, strix-halo 181	OK
+README.md	AGGIORNATO	target ds4f-q2, ds4f-q2-q4, ds4f-q4, ds4f-mxfp4, pro-q2-imatrix, glm-antirez-iq2xxs, glm-antirez-q2	7 target download_model.sh	linea 35-46: targets presenti	OK
+README.md	AGGIORNATO	./download_model.sh aggiorna ./ds4flash.gguf	ln -sfn	linea 116: "./ds4flash.gguf -> <download directory>"	OK
+README.md	AGGIORNATO	GLM file names GLM-5.2-UD-IQ2_XXS_RoutedIQ2XXS_blk78Q2K.gguf e GLM-5.2-UD-Q2_K_RoutedQ2K.gguf in download_model.sh	costanti	linea 21-22: stesso nome	OK
+README.md	AGGIORNATO	Makefile target `all` costruisce ds4, ds4-server, ds4-bench, ds4-eval, ds4-agent	linea 70	linea 70: all: ds4 ds4-server ds4-bench ds4-eval ds4-agent	OK
+dir-steering/README.md	AGGIORNATO	verbosity.json shape [43, 4096]	[43, 4096]	json.load: shape == [43, 4096]	OK
+dir-steering/README.md	AGGIORNATO	verbosity.f32 size = 43*4096*4 bytes	704512	ls: 704512	OK
+dir-steering/README.md	AGGIORNATO	flag --dir-steering-file/--dir-steering-ffn/--dir-steering-attn presenti	ds4_help.c	ds4_help.c 222-223, ds4_agent.c 735, ds4_server.c 13235	OK
+dir-steering/README.md	AGGIORNATO	succinct.txt e verbose.txt 100 righe ciascuno	wc -l	both 100	OK
+dir-steering/README.md	AGGIORNATO	eval_prompts.txt 5 righe	wc -l	5	OK
+dir-steering/README.md	AGGIORNATO	file build_direction.py e run_sweep.py nei tools	ls	dir-steering/tools/	OK
+gguf-tools/README.md	AGGIORNATO	piano quant implementato: q8_0, q8_K, q4_K, q2_K, iq2_xxs	quants.h enum	DS4Q_TYPE_Q8_0/Q8_K/Q4_K/Q2_K/IQ2_XXS presenti	OK
+gguf-tools/README.md	AGGIORNATO	make -C gguf-tools builds deepseek4-quantize	Makefile all	linea 46: all: deepseek4-quantize	OK
+gguf-tools/README.md	AGGIORNATO	score_official.c/score_llama.c/compare_scores.py/collect_official.py esistono	ls	present	OK
+gguf-tools/README.md	AGGIORNATO	DSpark defaults block 5, markov rank 256, noise 128799	defines	deepseek4-quantize.c 1985-1988	OK
+gguf-tools/README.md	AGGIORNATO	DSpark target layers 40,41,42	defines	lines 2003-2005	OK
+gguf-tools/imatrix/README.md	DA CORREGGERE	"4682 rendered prompts" nel README	dataset/manifest.json record_count	4690	DIVERSO
+gguf-tools/imatrix/README.md	AGGIORNATO	Flash Flash 43 layer / 256 experts	ds4.c	linee 554-556	OK
+gguf-tools/imatrix/README.md	AGGIORNATO	Pro 61 layer / 384 experts	ds4.c	linee 583-594	OK
+gguf-tools/imatrix/README.md	AGGIORNATO	flags --imatrix-dataset/--imatrix-out/--imatrix-max-prompts/--imatrix-max-tokens	ds4_help.c	ds4_help.c 279-282 (flags nel help)	OK
+gguf-tools/imatrix/README.md	AGGIORNATO	manifest rendered_utf8_bytes = 11670191	manifest.json	11670191	OK
+gguf-tools/imatrix/README.md	AGGIORNATO	modes nothink/think 2345+2345	manifest.json	2345 each	OK
+gguf-tools/mixed/README.md	AGGIORNATO	splice_mixed_expert_layers_gguf.py esiste	ls	present	OK
+gguf-tools/mixed/README.md	AGGIORNATO	flag --q4-layers/--dry-run/--force	argparse	linee 376-378	OK
+gguf-tools/mixed/README.md	AGGIORNATO	tipi layer 37-42	doc	doc-only	OK
+gguf-tools/mixed/README.md	AGGIORNATO	out presente + --force -> overwrite	code	FileExistsError se no --force	OK
+gguf-tools/mixed/README.md	AGGIORNATO	--dry-run non scrive niente	doc	doc-only	OK
+gguf-tools/quality-testing/README.md	AGGIORNATO	4 data sets tracked (flash, glm52-openrouter-100, pro, pro-0813)	dir listing	4 dirs	OK
+gguf-tools/quality-testing/README.md	AGGIORNATO	100 prompts per set, 101 manifest lines (header + 100)	manifest tsv	101 lines each	OK
+gguf-tools/quality-testing/README.md	AGGIORNATO	collect_official.py, compare_scores.py, score_official.c esistono	ls	present	OK
+gguf-tools/quality-testing/README.md	AGGIORNATO	make quality-score / quality-llama-score targets	Makefile	linee 51, 55	OK
+gguf-tools/quality-testing/README.md	AGGIORNATO	continuations/prompts/responses structure	ls	present in data dirs	OK
+speed-bench/README.md	AGGIORNATO	ds4-bench target exists	make	Makefile linea 70	OK
+speed-bench/README.md	AGGIORNATO	plot_speed.py exists	ls	present	OK
+speed-bench/README.md	AGGIORNATO	default SVG output _ts.svg suffix	plot_speed.py linea 219	{stem}_ts.svg	OK
+speed-bench/README.md	AGGIORNATO	Makefile targets metal-decode-schedule-bench and metal-prefill-variant-bench	Makefile	linee 118, 126	OK
+speed-bench/README.md	DA CORREGGERE	example m3_max.csv (README linea 18/28)	file exists	m3_max.csv NON esiste (solo m3_max_ts.svg)	DIVERSO
+speed-bench/README.md	AGGIORNATO	promessi_sposi.txt esempio presente	ls	present	OK
+tests/test-vectors/README.md	AGGIORNATO	flash-0731 e flash-pre-0731 dirs exist	ls	both	OK
+tests/test-vectors/README.md	AGGIORNATO	official/prompts/local-golden.vec/official.vec in flash-0731	ls	present	OK
+tests/test-vectors/README.md	AGGIORNATO	fetch_official_vectors.py e fetch_openrouter_glm_vectors.py esistono	ls	both	OK
+tests/test-vectors/README.md	AGGIORNATO	--logprob-vectors / --local-golden-vectors / --metal-ssd-streaming-cache-pressure flags	ds4_test.c	linee 6427-6429	OK
+tests/test-vectors/README.md	AGGIORNATO	5 prompts in flash-0731	ls|wc	5	OK
+tests/test-vectors/README.md	AGGIORNATO	glm-openrouter dir exists	ls	present	OK
+gguf-tools/imatrix/dataset	NON-REVISIONATO	cartella non revisionata (1 file)	-	-	NON-VERIFICABILE
+gguf-tools/quality-testing/data	NON-REVISIONATO	cartella non revisionata (2 file)	-	-	NON-VERIFICABILE
