@@ -129,7 +129,12 @@ bool ds4_ssd_auto_cache_plan(uint64_t            recommended_bytes,
     if (cache_experts > UINT32_MAX) cache_experts = UINT32_MAX;
 
     out->cache_experts = (uint32_t)cache_experts;
-    out->effective_cache_bytes = cache_experts * per_expert_bytes;
+    if (per_expert_bytes > 0 &&
+        cache_experts > UINT64_MAX / per_expert_bytes) {
+        out->effective_cache_bytes = UINT64_MAX;
+    } else {
+        out->effective_cache_bytes = cache_experts * per_expert_bytes;
+    }
     return out->cache_experts != 0;
 }
 
