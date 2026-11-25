@@ -76,6 +76,7 @@ If you are looking for very specific things, we have other
 sub-README files. Otherwise for normal usage keep reading the
 next sections.
 
+- [docs/ISTRUZIONI.md](docs/ISTRUZIONI.md): istruzioni d'uso sintetiche di ogni software del repo.
 - [CONTRIBUTING.md](CONTRIBUTING.md): correctness and speed regression testing
   guide for contributors. **Read this before sending a pull request**.
 - [QA_BEFORE_RELEASES.md](QA_BEFORE_RELEASES.md): the complete release test

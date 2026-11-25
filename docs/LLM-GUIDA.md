@@ -31,3 +31,6 @@ docs/archivio/ non esiste; nessun documento spostato. Nessun SUPERATO nella revi
 ## Non verificato in questa sessione
 - Build completa `make`, download modelli, test/bench: non eseguiti.
 - Percorso AGENTS.md/.env.example: assenti; non creati (fuori perimetro consigliato).
+
+## Istruzioni d'uso
+Vedi docs/ISTRUZIONI.md per guida sintetica (requisiti, installazione, avvio, uso, verifica, problemi noti) per ogni software del repo.
