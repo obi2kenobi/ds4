@@ -23,3 +23,11 @@ docs/archivio/ non esiste; nessun documento spostato. Nessun SUPERATO nella revi
 ## Limiti
 - Build, modelli, inferenza: non verificati in questa sessione.
 - Per documented verifications, vedi docs/_revisione.tsv (esito OK/FUORI PERIMETRO).
+
+## CLAUDE.md
+- CLAUDE.md (38 righe): scopo, struttura, comandi, convenzioni, cosa non toccare, rimando a questa guida.
+- Segreti: nessuna chiave nel repo; .env.example non esiste. Usa solo segnaposto.
+
+## Non verificato in questa sessione
+- Build completa `make`, download modelli, test/bench: non eseguiti.
+- Percorso AGENTS.md/.env.example: assenti; non creati (fuori perimetro consigliato).

@@ -1,8 +1,12 @@
+docs/LLM-GUIDA.md
 README.md
+AGENT.md
+CONTRIBUTING.md
+MODEL_CARD.md
+QA_BEFORE_RELEASES.md
+STRIXHALO.md
+cuda/mmq/VENDOR.md
 dir-steering/README.md
 gguf-tools/README.md
 gguf-tools/imatrix/README.md
 gguf-tools/mixed/README.md
-gguf-tools/quality-testing/README.md
-speed-bench/README.md
-tests/test-vectors/README.md

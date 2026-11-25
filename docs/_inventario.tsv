@@ -1,5 +1,12 @@
 documento	righe	ultimo_commit
+AGENT.md	56	c1d4597 2026-08-23
+CONTRIBUTING.md	144	c1d4597 2026-08-23
+MODEL_CARD.md	243	c1d4597 2026-08-23
+QA_BEFORE_RELEASES.md	723	c1d4597 2026-08-23
 README.md	1648	c1d4597 2026-08-23
+STRIXHALO.md	146	c1d4597 2026-08-23
+cuda/mmq/VENDOR.md	149	c1d4597 2026-08-23
+docs/LLM-GUIDA.md	25	7b44675 2026-11-24
 dir-steering/README.md	151	c1d4597 2026-08-23
 gguf-tools/README.md	193	c1d4597 2026-08-23
 gguf-tools/imatrix/README.md	188	c1d4597 2026-08-23
@@ -7,6 +14,5 @@ gguf-tools/imatrix/dataset/README.md	37	c1d4597 2026-08-23
 gguf-tools/mixed/README.md	40	c1d4597 2026-08-23
 gguf-tools/quality-testing/README.md	181	c1d4597 2026-08-23
 gguf-tools/quality-testing/data/README.md	22	c1d4597 2026-08-23
-gguf-tools/quality-testing/data/pro-0813/README.md	43	c1d4597 2026-08-23
 speed-bench/README.md	82	c1d4597 2026-08-23
 tests/test-vectors/README.md	105	c1d4597 2026-08-23
