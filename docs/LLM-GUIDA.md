@@ -34,3 +34,6 @@ docs/archivio/ non esiste; nessun documento spostato. Nessun SUPERATO nella revi
 
 ## Istruzioni d'uso
 Vedi docs/ISTRUZIONI.md per guida sintetica (requisiti, installazione, avvio, uso, verifica, problemi noti) per ogni software del repo.
+
+## Scheda tecnica
+Vedi docs/SCHEDA-TECNICA.md per la scheda tecnica sintetica del repo (scopo, architettura, componenti, dipendenze, build/test, rischi).
